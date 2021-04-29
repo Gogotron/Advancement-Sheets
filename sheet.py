@@ -33,7 +33,7 @@ def values(advancements):
 	page.insert_rows(rows,row=2)
 
 def apply_format():
-	page.format("B1:1",{"textRotation":{"angle":45}})
+	page.format("B1:1",{"textRotation":{"angle":45},"horizontalAlignment":"LEFT"})
 	page.format(f"B2:B{page.row_count}",{"horizontalAlignment":"CENTER"})
 	rules = fmt.get_conditional_format_rules(page)
 
