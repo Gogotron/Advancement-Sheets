@@ -1,7 +1,7 @@
 import json
 
 USERCACHE_PATH		= "./example_data/"
-ADVANCEMENTS_PATH	= "./example_data/advancements/"
+ADVANCEMENTS_PATH	= "./example_data/world/advancements/"
 
 with open("advancement_ids.json","r") as f:
 	ids = json.load(f)
