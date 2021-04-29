@@ -8,7 +8,7 @@ with open("advancement_ids.json","r") as f:
 
 
 def serverwide_advancements():
-	with open("usercache.json","r") as f:
+	with open(USERCACHE_PATH+"usercache.json","r") as f:
 		usercache = json.load(f)
 
 	all_advancements = {}
@@ -30,7 +30,7 @@ def advancement_states(uuid):
 
 def obtained_ids(uuid):
 	try:
-		with open(f"{ADVANCEMENTS_PATH}{uuid}.json","r") as f:
+		with open(ADVANCEMENTS_PATH+f"{uuid}.json","r") as f:
 			content = json.load(f)
 	except:
 		return set()
